@@ -1,0 +1,75 @@
+.nav-container {
+  max-width: 100%;
+}
+
+.search-inp-container {
+  border: 1px solid black;
+}
+
+.search-inp-container input {
+  border: none;
+  width: 100%;
+  display: inline-block;
+}
+
+.account {
+  position: relative;
+  display: inline-block;
+  padding: 5px 10px;
+  overflow: hidden;
+}
+
+.account::before,
+.account::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: black; /* Border color */
+  transition: all 0.3s ease;
+}
+
+.account::before {
+  top: 0;
+  left: 0;
+  transform-origin: top left;
+}
+
+.account::after {
+  bottom: 0;
+  right: 0;
+  transform-origin: bottom right;
+}
+
+.account:hover::before {
+  width: 100%;
+  transform: scaleX(1);
+}
+
+.account:hover::after {
+  width: 100%;
+  transform: scaleX(1);
+}
+
+.fa-icon {
+  /* Add your Font Awesome icon styles here */
+}
+
+.fa-icon:hover {
+  animation: beat-fade 1s infinite; /* Change the animation duration and iteration count as needed */
+}
+
+@keyframes beat-fade {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
