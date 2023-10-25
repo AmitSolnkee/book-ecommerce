@@ -3,14 +3,15 @@ import { useDispatch, useSelector } from "react-redux";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./ProductCarousal.css";
-import { getProducts } from "../../redux/slices/productslice/productAction";
+import { getProducts } from "../../../redux/slices/productslice/productAction";
 const ProductCarousel = () => {
   const products = useSelector((state) => state.productReducer.products);
   const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch(getProducts());
   }, [dispatch]);
-  console.log("products", products);
+
   const responsive = {
     desktop: {
       breakpoint: { max: 2500, min: 1500 },

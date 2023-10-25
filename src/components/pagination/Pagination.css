@@ -6,3 +6,6 @@
     font-weight: 500;
     margin: 1px;
 }
+.pagination-item{
+    border: 1px solid black;
+}

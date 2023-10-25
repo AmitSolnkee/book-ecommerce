@@ -12,7 +12,7 @@ const Jumbotron = () => {
           collection of books.
         </h5>
         <h5>Explore, Learn, and Immerse Yourself in the Stories.</h5>
-        <a href="/shop" class="btn btn-primary btn-lg">
+        <a href="/shop" className="btn btn-primary btn-lg">
           Browse Books
         </a>
       </div>

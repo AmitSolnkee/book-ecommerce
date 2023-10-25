@@ -2,10 +2,24 @@
   border: 1px solid black;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
+.sort-container span{
+ margin-right: 2%;
+}
+@media screen and (max-width: 992px){
+  .sort-container span{
+    margin-right: 0%;
+    white-space: nowrap;
+    overflow: hidden;
+    
+   }
+}
 .add-cart{
     border: 1px solid black;
     max-width: 100%;
+}
+.add-cart :hover{
+  background-color: grey;
+  color: white;
 }
 .custom-product-img{
   width: 100%;
@@ -17,4 +31,23 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-item {
+  margin: 0 5px;
+  cursor: pointer;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.pagination-item.active {
+  background-color: #007bff;
+  color: #fff;
 }
