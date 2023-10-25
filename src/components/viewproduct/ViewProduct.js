@@ -90,6 +90,7 @@ const ViewProduct = () => {
               <div className="col-md-2">
                 <img
                   className="img-thumbnail"
+                  alt="img"
                   src={product?.volumeInfo?.imageLinks?.smallThumbnail}
                 />
               </div>
