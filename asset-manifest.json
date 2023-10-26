@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/AmitSolnkee/book-ecommerce.git/static/css/main.841a2457.css",
+    "main.js": "/AmitSolnkee/book-ecommerce.git/static/js/main.1319506c.js",
+    "static/js/787.08f3454f.chunk.js": "/AmitSolnkee/book-ecommerce.git/static/js/787.08f3454f.chunk.js",
+    "static/media/bookstore-bg.jpg": "/AmitSolnkee/book-ecommerce.git/static/media/bookstore-bg.f0fdfafc965de12c3dae.jpg",
+    "static/media/revicons.eot": "/AmitSolnkee/book-ecommerce.git/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/AmitSolnkee/book-ecommerce.git/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/AmitSolnkee/book-ecommerce.git/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/AmitSolnkee/book-ecommerce.git/index.html",
+    "main.841a2457.css.map": "/AmitSolnkee/book-ecommerce.git/static/css/main.841a2457.css.map",
+    "main.1319506c.js.map": "/AmitSolnkee/book-ecommerce.git/static/js/main.1319506c.js.map",
+    "787.08f3454f.chunk.js.map": "/AmitSolnkee/book-ecommerce.git/static/js/787.08f3454f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.841a2457.css",
+    "static/js/main.1319506c.js"
+  ]
+}
