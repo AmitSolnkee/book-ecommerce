@@ -1,4 +1,4 @@
-import React, { useEffect ,useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { loadCartFromLocalStorage } from "../../redux/slices/cartslice/cartSlice";
@@ -42,7 +42,15 @@ const Nav = () => {
               onClick={() => navigate("/cart")}
             >
               <i className="fa-solid fa-lg fa-cart-shopping"></i>
-              <div className="cart-item">{cart.length}</div>
+              <div
+                className="cart-item"
+                style={
+                  cart.length > 0 ? { display: "block" } : { display: "none" }
+                }
+              >
+                {" "}
+                {cart.length}
+              </div>
             </div>
             <div>
               <i className="fa-solid fa-lg fa-user"></i>
@@ -56,7 +64,12 @@ const Nav = () => {
             {isDropdownOpen && (
               <div className="dropdown-menu text-center">
                 <div className="dropdown-item">Account</div>
-                <div className="dropdown-item" onClick={()=>navigate('/cart')}>Cart</div>
+                <div
+                  className="dropdown-item"
+                  onClick={() => navigate("/cart")}
+                >
+                  Cart
+                </div>
               </div>
             )}
           </div>

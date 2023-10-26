@@ -69,7 +69,7 @@ const Product = () => {
   return (
     <div className="product-container">
       <div className=" sort-container px-4 d-flex align-items-center">
-        <span className="fs-6 fw-bold">Sort:</span>
+        <span className="fs-6 me-1 fw-bold">Sort:</span>
         {sortItems.map((el, id) => {
           const isSelected = sortBy === id;
           const styleSpan = {
@@ -78,7 +78,7 @@ const Product = () => {
           };
           return (
             <span
-              className="fw-semibold me-1"
+              className=" sortBy fw-semibold me-1"
               style={styleSpan}
               onClick={() => selectSortBy(id)}
               name={el}

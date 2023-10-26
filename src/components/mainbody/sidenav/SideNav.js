@@ -10,7 +10,7 @@ const SideNav = () => {
   const categories = useSelector((state) => state.productReducer.categories);
   const products = useSelector((state) => state?.productReducer?.products);
   const dispatch = useDispatch();
-  console.log('products',products)
+  console.log("products", products);
   const [checkedItems, setCheckedItems] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const priceRange = [
@@ -131,7 +131,7 @@ const SideNav = () => {
               aria-expanded="false"
               aria-controls="flush-collapseThree"
             >
-              Accordion Item #3
+              Dummy
             </button>
           </h2>
           <div
@@ -141,11 +141,11 @@ const SideNav = () => {
           >
             <div className="accordion-body">
               Placeholder content for this accordion, which is intended to
-              demonstrate the <code>.accordion-flush</code> className. This is
-              the third item's accordion body. Nothing more exciting happening
-              here in terms of content, but just filling up the space to make it
-              look, at least at first glance, a bit more representative of how
-              this would look in a real-world application.
+              demonstrate the className. This is the third item's accordion
+              body. Nothing more exciting happening here in terms of content,
+              but just filling up the space to make it look, at least at first
+              glance, a bit more representative of how this would look in a
+              real-world application.
             </div>
           </div>
         </div>

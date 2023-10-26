@@ -35,7 +35,7 @@ const ProductCarousel = () => {
     },
   };
   return (
-    <div className="container-fluid p-2 mt-5 text-center ">
+    <div className="container-fluid p-2 mt-4 text-center ">
       <h2 className="mt-5 mb-4 d-inline">Explore Top rated books</h2>
       <p className="d-none d-md-inline  float-end fs-4">View all</p>
 

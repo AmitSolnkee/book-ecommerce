@@ -6,6 +6,7 @@ import {
   removeFromCart,
   addToCart,
   orderHistory,
+  loadOrderFromlocalStorage,
 } from "../../redux/slices/cartslice/cartSlice";
 import { useNavigate } from "react-router-dom";
 
@@ -19,6 +20,8 @@ const Cart = () => {
 
   const placeOrder = () => {
     dispatch(orderHistory(cartItems));
+    dispatch(loadCartFromLocalStorage())
+    dispatch(loadOrderFromlocalStorage())
     navigate("/address");
   };
   return (
@@ -91,7 +94,11 @@ const Cart = () => {
       </table>
       <div className="container float-end">
         <h2>Summary</h2>
-        <div>
+        <div
+          style={
+            cartItems.length > 0 ? { display: "block" } : { display: "none" }
+          }
+        >
           Total : ₹
           {cartItems
             .reduce((acc, item) => {
@@ -101,7 +108,7 @@ const Cart = () => {
               return acc;
             }, 0)
             .toFixed(2)}
-          <button className="btn btn-success mt-4" onClick={placeOrder}>
+          <button className="btn btn-success ms-5 w-25" onClick={placeOrder}>
             {" "}
             Place Order
           </button>
